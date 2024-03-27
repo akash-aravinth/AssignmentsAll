@@ -1,16 +1,27 @@
 package constructor.parentchild;
 
 public class Parent {
-    Parent(){
-        System.out.println("Parent");
+   private String name;
+   private int age;
+
+   Parent(String name,int age){
+       this.name = name;
+       this.age = age;
+   }
+
+    public String getName() {
+        return name;
     }
-    Parent(int age){
-        System.out.println("Parent age is : "+age);
+
+    public void setName(String name) {
+        this.name = name;
     }
-    Parent(String name ){
-        System.out.println("Parent Name is : "+name);
+
+    public int getAge() {
+        return age;
     }
-    Parent(int age,String name){
-        System.out.println("Parent name is : "+name+" and age is : "+age+"\n\n");
+
+    public void setAge(int age) {
+        this.age = age;
     }
 }

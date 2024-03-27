@@ -1,6 +1,6 @@
 package constructor.geometryshape;
 
-public class Circle extends Rectangle{
+public class Circle extends Shape{
     public void print(){
         System.out.println("Print Circle");
     }
